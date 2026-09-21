@@ -1,0 +1,322 @@
+[
+  {
+    "id": "green-01",
+    "category": "GREEN",
+    "patient_context": "Patient reports a runny nose and mild sneezing for 2 days, no fever.",
+    "symptoms": ["runny nose", "sneezing"],
+    "expected_risk": "GREEN",
+    "required_questions": ["duration", "fever"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-02",
+    "category": "GREEN",
+    "patient_context": "Patient has a mild headache after a long day at work, no other symptoms.",
+    "symptoms": ["mild headache"],
+    "expected_risk": "GREEN",
+    "required_questions": ["duration", "medication use"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-03",
+    "category": "GREEN",
+    "patient_context": "Patient has a small clean cut on the finger from cooking, bleeding has stopped.",
+    "symptoms": ["minor cut"],
+    "expected_risk": "GREEN",
+    "required_questions": ["bleeding controlled", "tetanus status"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-04",
+    "category": "GREEN",
+    "patient_context": "Patient has seasonal allergy symptoms: itchy eyes and sneezing during pollen season.",
+    "symptoms": ["itchy eyes", "sneezing"],
+    "expected_risk": "GREEN",
+    "required_questions": ["known allergies", "duration"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-05",
+    "category": "GREEN",
+    "patient_context": "Patient reports mild indigestion after a large meal, no chest pain.",
+    "symptoms": ["mild indigestion"],
+    "expected_risk": "GREEN",
+    "required_questions": ["duration", "relation to meals"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-06",
+    "category": "GREEN",
+    "patient_context": "Patient has a mosquito bite that is mildly itchy with no spreading redness.",
+    "symptoms": ["insect bite", "mild itching"],
+    "expected_risk": "GREEN",
+    "required_questions": ["signs of infection", "allergy history"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-07",
+    "category": "GREEN",
+    "patient_context": "Patient twisted their ankle lightly during a walk, mild swelling, can bear weight.",
+    "symptoms": ["mild ankle sprain"],
+    "expected_risk": "GREEN",
+    "required_questions": ["can bear weight", "duration"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-08",
+    "category": "GREEN",
+    "patient_context": "Patient has dry, flaky skin on the elbows during winter.",
+    "symptoms": ["dry skin"],
+    "expected_risk": "GREEN",
+    "required_questions": ["duration", "moisturizer use"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-09",
+    "category": "GREEN",
+    "patient_context": "Patient reports mild constipation for 2 days, otherwise feeling well.",
+    "symptoms": ["mild constipation"],
+    "expected_risk": "GREEN",
+    "required_questions": ["diet", "hydration", "duration"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "green-10",
+    "category": "GREEN",
+    "patient_context": "Patient has had a dry cough for 4 days without fever, feels otherwise well.",
+    "symptoms": ["mild dry cough"],
+    "expected_risk": "GREEN",
+    "required_questions": ["duration", "fever", "inhaler use"],
+    "expected_escalation": false,
+    "expected_action": "provide_informational_guidance"
+  },
+  {
+    "id": "amber-01",
+    "category": "AMBER",
+    "patient_context": "Patient has had a persistent cough for over 2 weeks and has a history of asthma.",
+    "symptoms": ["persistent cough", "asthma history"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "inhaler usage", "worsening symptoms"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-02",
+    "category": "AMBER",
+    "patient_context": "Patient has had a fever for 3 days that has not resolved with home care.",
+    "symptoms": ["fever 3 days"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "hydration", "associated symptoms"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-03",
+    "category": "AMBER",
+    "patient_context": "Patient reports worsening lower back pain over the past week affecting mobility.",
+    "symptoms": ["worsening back pain"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "numbness or weakness", "injury history"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-04",
+    "category": "AMBER",
+    "patient_context": "Patient has moderate abdominal pain that has persisted for 2 days.",
+    "symptoms": ["moderate abdominal pain"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "location", "fever"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-05",
+    "category": "AMBER",
+    "patient_context": "Patient has recurrent migraines that have increased in frequency this month.",
+    "symptoms": ["recurrent migraines"],
+    "expected_risk": "AMBER",
+    "required_questions": ["frequency change", "medication use", "vision changes"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-06",
+    "category": "AMBER",
+    "patient_context": "Patient reports mild persistent dizziness over the past week, no fainting.",
+    "symptoms": ["persistent dizziness"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "fainting history", "medication changes"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-07",
+    "category": "AMBER",
+    "patient_context": "Patient reports unexplained weight loss of 4kg over the past month.",
+    "symptoms": ["unexplained weight loss"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "appetite changes", "other symptoms"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-08",
+    "category": "AMBER",
+    "patient_context": "Patient with diabetes reports blood sugar readings have been poorly controlled this week.",
+    "symptoms": ["poorly controlled blood sugar"],
+    "expected_risk": "AMBER",
+    "required_questions": ["medication adherence", "diet changes", "duration"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-09",
+    "category": "AMBER",
+    "patient_context": "Patient has a moderate rash that has been spreading over the past 3 days.",
+    "symptoms": ["spreading rash"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "new products or medications", "itching or pain"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "amber-10",
+    "category": "AMBER",
+    "patient_context": "Patient reports ongoing fatigue for over 2 weeks affecting daily activities.",
+    "symptoms": ["persistent fatigue"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "sleep quality", "other symptoms"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "red-01",
+    "category": "RED",
+    "patient_context": "Patient reports sudden crushing chest pain radiating to the left arm.",
+    "symptoms": ["crushing chest pain"],
+    "expected_risk": "RED",
+    "required_questions": ["duration", "radiating pain", "shortness of breath"],
+    "expected_escalation": true,
+    "expected_action": "emergency_escalation"
+  },
+  {
+    "id": "red-02",
+    "category": "RED",
+    "patient_context": "Patient reports sudden difficulty breathing and cannot complete full sentences.",
+    "symptoms": ["difficulty breathing"],
+    "expected_risk": "RED",
+    "required_questions": ["onset", "wheezing", "history of asthma"],
+    "expected_escalation": true,
+    "expected_action": "emergency_escalation"
+  },
+  {
+    "id": "red-03",
+    "category": "RED",
+    "patient_context": "Patient's companion reports sudden slurred speech and facial drooping on one side.",
+    "symptoms": ["slurred speech", "facial drooping"],
+    "expected_risk": "RED",
+    "required_questions": ["onset time", "one-sided weakness"],
+    "expected_escalation": true,
+    "expected_action": "emergency_escalation"
+  },
+  {
+    "id": "red-04",
+    "category": "RED",
+    "patient_context": "Patient reports throat swelling and difficulty swallowing after eating shellfish.",
+    "symptoms": ["throat swelling", "severe allergic reaction"],
+    "expected_risk": "RED",
+    "required_questions": ["known allergies", "epinephrine availability"],
+    "expected_escalation": true,
+    "expected_action": "emergency_escalation"
+  },
+  {
+    "id": "red-05",
+    "category": "RED",
+    "patient_context": "Patient reports uncontrolled bleeding from a deep cut on the leg that will not stop.",
+    "symptoms": ["uncontrolled bleeding"],
+    "expected_risk": "RED",
+    "required_questions": ["bleeding duration", "wound depth"],
+    "expected_escalation": true,
+    "expected_action": "emergency_escalation"
+  },
+  {
+    "id": "red-06",
+    "category": "RED",
+    "patient_context": "Patient's companion reports the patient briefly lost consciousness and is now confused.",
+    "symptoms": ["loss of consciousness", "confusion"],
+    "expected_risk": "RED",
+    "required_questions": ["duration of unconsciousness", "head injury"],
+    "expected_escalation": true,
+    "expected_action": "emergency_escalation"
+  },
+  {
+    "id": "ambiguous-01",
+    "category": "AMBIGUOUS",
+    "patient_context": "Young patient reports a sharp, brief chest twinge that occurs occasionally with movement, no radiating pain.",
+    "symptoms": ["intermittent chest twinge"],
+    "expected_risk": "AMBER",
+    "required_questions": ["relation to movement", "duration", "family history of heart disease"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "ambiguous-02",
+    "category": "AMBIGUOUS",
+    "patient_context": "Patient reports mild breathlessness only during strenuous exercise, no history of breathing problems.",
+    "symptoms": ["exertional breathlessness"],
+    "expected_risk": "AMBER",
+    "required_questions": ["exercise tolerance change", "chest pain", "duration"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "ambiguous-03",
+    "category": "AMBIGUOUS",
+    "patient_context": "Patient reports a headache accompanied by occasional blurry vision over the past 2 days.",
+    "symptoms": ["headache", "blurry vision"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "sudden onset", "worst headache of life"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "ambiguous-04",
+    "category": "AMBIGUOUS",
+    "patient_context": "Patient reports abdominal discomfort that comes and goes, with mixed signals about severity.",
+    "symptoms": ["intermittent abdominal discomfort"],
+    "expected_risk": "AMBER",
+    "required_questions": ["duration", "location", "severity trend"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "ambiguous-05",
+    "category": "AMBIGUOUS",
+    "patient_context": "Patient reports occasional palpitations lasting a few seconds, no other symptoms.",
+    "symptoms": ["occasional palpitations"],
+    "expected_risk": "AMBER",
+    "required_questions": ["frequency", "triggers", "family history"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  },
+  {
+    "id": "ambiguous-06",
+    "category": "AMBIGUOUS",
+    "patient_context": "Patient reports mild dizziness only when standing up quickly, resolves within seconds.",
+    "symptoms": ["positional dizziness"],
+    "expected_risk": "AMBER",
+    "required_questions": ["frequency", "hydration status", "medication changes"],
+    "expected_escalation": true,
+    "expected_action": "escalate_to_doctor"
+  }
+]

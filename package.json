@@ -1,0 +1,21 @@
+{
+  "name": "doctor-twin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Root convenience scripts to run the backend and frontend together.",
+  "scripts": {
+    "deck:build": "node presentation/generate-deck.js",
+    "dev:backend": "cd backend && ..\\.venv\\Scripts\\uvicorn.exe app.main:app --reload --reload-dir app --reload-include *.py --port 8014",
+    "dev:backend:fresh": "npm run backend:preflight && npm run db:reset && npm run dev:backend",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "backend:preflight": "cd backend && ..\\.venv\\Scripts\\python.exe -m app.dev_server --port 8014",
+    "db:reset": "cd backend && ..\\.venv\\Scripts\\python.exe -m app.reset_data",
+    "seed": "cd backend && ..\\.venv\\Scripts\\python.exe -m app.seed_data",
+    "test:backend": "cd backend && ..\\.venv\\Scripts\\python.exe -m pytest tests -v"
+  },
+  "devDependencies": {
+    "concurrently": "9.1.2",
+    "pptxgenjs": "^4.0.1"
+  }
+}
